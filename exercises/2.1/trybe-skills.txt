@@ -1,4 +1,4 @@
-O que eu vou aprender na Trybe:
+What I will learn in the Trybe course:
 
 - Unix
 - Bash
