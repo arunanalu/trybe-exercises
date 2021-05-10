@@ -3,5 +3,7 @@ What I will learn in the Trybe course:
 - Unix
 - Bash
 - Git
+- Javascript
 - HTML
 - CSS
+
