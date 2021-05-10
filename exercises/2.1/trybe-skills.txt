@@ -4,3 +4,6 @@ What I will learn in the Trybe course:
 - Bash
 - Git
 - Javascript
+- HTML
+- CSS
+
