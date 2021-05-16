@@ -1,5 +1,8 @@
 # Boas vindas ao meu repositório de exercícios !
 
+Languages: [English](https://github.com/mayusatori/trybe-exercises/blob/main/README.en.md#wellcome-to-my-exercise-repository-) [Portuguese](https://github.com/mayusatori/trybe-exercises#boas-vindas-ao-meu-reposit%C3%B3rio-de-exerc%C3%ADcios-)
+
+
 Aqui você vai encontrar todos os exercícios que eu faço enquanto estudante de desenvolvimento web da **Trybe**, e assim, poder acompanhar a **evolução do meu aprendizado** até me tornar um profissional **fullstack** apto para atender as exigências do mercado.
 
 Os exercícios estão organizados da seguinte forma
