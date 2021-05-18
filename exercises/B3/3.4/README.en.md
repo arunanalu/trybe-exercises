@@ -5,3 +5,5 @@ Languages: [English](https://github.com/mayusatori/trybe-exercises/blob/main/exe
 I learned about the importance of semantic HTML for the accessibility of a page, and also for it to be more relevant in search engines.
 I learned many tags used to make HTML semantic, for example:
 > header, nav, main, section, article, separate, footer
+
+In addition, **I made my first site with semantic HTML** which can be seen in exercise 2
