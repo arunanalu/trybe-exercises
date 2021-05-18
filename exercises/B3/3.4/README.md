@@ -5,3 +5,5 @@ Languages: [English](https://github.com/mayusatori/trybe-exercises/blob/main/exe
 Aprendi sobre a importância do HTML semântico para a acessibilidade de uma página, e também para ela ter maior relevância nos motores de busca.
 Aprendi muitas tags utilizadas para tornar o HTML semântico, por exemplo:
 > header, nav, main, section, article, aside, footer 
+
+Além disso, **fiz o meu primeiro site com HTML semântico** que pode ser conferido no exercício 2
