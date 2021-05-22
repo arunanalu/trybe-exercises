@@ -21,8 +21,8 @@ dentro do laço, concatenar a string com '*' e a cada concatenação imprimir o 
 terceiro passo: código */ 
 
 let n = 8;
-let nArray = '';
+let nString = '';
 for (index = 0; index < n; index += 1) {
-  nArray += '*';
-  console.log(nArray);
+  nString += '*';
+  console.log(nString);
 }
