@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="paiDoPai">
+    <div id="pai">
+      <div id="primeiroFilho"></div>
+      <div id="elementoOndeVoceEsta">
+        <div id="primeiroFilhoDoFilho"></div>
+        <div id="segundoEUltimoFilhoDoFilho"></div>
+      </div>
+      Atenção!
+      <div id="terceiroFilho"></div>
+      <div id="quartoEUltimoFilho"></div>
+    </div>
+  </div>
+  <script>
+    console.log(document.querySelector('#elementoOndeVoceEsta'))
+
+    document.querySelector('#elementoOndeVoceEsta').parentElement.style.backgroundColor = 'blue';
+
+    document.querySelector('#primeiroFilhoDoFilho').innerHTML = 'Filho do filho aqui!';
+    
+    console.log(document.querySelector('#pai').firstElementChild);
+
+    console.log(document.querySelector('#elementoOndeVoceEsta').previousElementSibling);
+
+    console.log(document.querySelector('#elementoOndeVoceEsta').nextSibling);
+
+    console.log(document.querySelector('#elementoOndeVoceEsta').nextElementSibling);
+
+    console.log(document.querySelector('#pai').lastElementChild.previousElementSibling);
+
+    let pai = document.querySelector('#pai');
+    let irmaoOndeEsta = document.createElement('div');
+    irmaoOndeEsta.className = 'IrmaoOndeEsta'
+    pai.appendChild(irmaoOndeEsta);
+
+    let ondeEsta = document.querySelector('#elementoOndeVoceEsta');
+    let filhoOndeEsta = document.createElement('div');
+    filhoOndeEsta.className = 'filhoOndeEsta'
+    ondeEsta.appendChild(filhoOndeEsta);
+
+    let filhoDoFilho = document.querySelector('#primeiroFilhoDoFilho');
+    let filhoDoFilhoDoFilho = document.createElement('div');
+    filhoDoFilhoDoFilho.className = 'filhoDoFilhoDoFilho';
+    filhoDoFilho.appendChild(filhoDoFilhoDoFilho);
+
+    console.log(document.querySelector('.filhoDoFilhoDoFilho').parentElement.parentElement.nextElementSibling)
+
+    let quartoEUltimoFilho = document.querySelector('#quartoEUltimoFilho');
+    pai.removeChild(quartoEUltimoFilho)
+  </script>
+</body>
+</html>
