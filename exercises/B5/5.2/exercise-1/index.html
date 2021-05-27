@@ -35,6 +35,26 @@
     console.log(document.querySelector('#elementoOndeVoceEsta').nextElementSibling);
 
     console.log(document.querySelector('#pai').lastElementChild.previousElementSibling);
+
+    let pai = document.querySelector('#pai');
+    let irmaoOndeEsta = document.createElement('div');
+    irmaoOndeEsta.className = 'IrmaoOndeEsta'
+    pai.appendChild(irmaoOndeEsta);
+
+    let ondeEsta = document.querySelector('#elementoOndeVoceEsta');
+    let filhoOndeEsta = document.createElement('div');
+    filhoOndeEsta.className = 'filhoOndeEsta'
+    ondeEsta.appendChild(filhoOndeEsta);
+
+    let filhoDoFilho = document.querySelector('#primeiroFilhoDoFilho');
+    let filhoDoFilhoDoFilho = document.createElement('div');
+    filhoDoFilhoDoFilho.className = 'filhoDoFilhoDoFilho';
+    filhoDoFilho.appendChild(filhoDoFilhoDoFilho);
+
+    console.log(document.querySelector('.filhoDoFilhoDoFilho').parentElement.parentElement.nextElementSibling)
+
+    let quartoEUltimoFilho = document.querySelector('#quartoEUltimoFilho');
+    pai.removeChild(quartoEUltimoFilho)
   </script>
 </body>
 </html>
