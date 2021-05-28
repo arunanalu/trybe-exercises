@@ -42,6 +42,7 @@ function alterarTexto(event) {
     let texto = event.target.value
     let divAlterada = document.querySelector('.tech');
     divAlterada.innerHTML = texto;
+    event.target.value = '';
   }
 }
 
