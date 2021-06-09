@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+
+body {
+  background-color: rgb(244, 255, 240);
+  font-family: 'Signika Negative', sans-serif;
+}
+
+#header {
+  text-align: center;
+  margin: 20px auto;
+  border: 5px solid rgb(218, 226, 221);
+  border-radius: 15px;
+  width: 50%;
+  max-width: 500px;
+  min-width: 328px;
+}
+
+#header h1 {
+  margin-bottom: 10px;
+}
+
+#header p {
+  margin-bottom: 10px;
+}
+
+#form {
+  margin: 10px auto;
+  padding: 10px 0;
+  width: 50%;
+  text-align: center;
+  background-color: rgb(218, 226, 221);
+  border: 5px solid rgb(218, 226, 221);
+  border-radius: 15px;
+  max-width: 500px;
+  min-width: 328px;
+}
+
+#form div {
+  margin: 10px 0;
+}
+
+#form div:nth-of-type(1), #form div:nth-of-type(2) {
+  text-align: left;
+  margin-left: 5px;
+}
+
+#inputEmail, #inputSenha {
+  width: 80%
+}
