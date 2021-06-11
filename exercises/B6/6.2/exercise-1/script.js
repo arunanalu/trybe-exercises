@@ -1,6 +1,5 @@
-// document.querySelector('#enviar').addEventListener('click', (evento) => {
-//   evento.preventDefault();
-// });
+// configurações da biblioteca de validação
+// biblioteca usada para validar o formulário https://github.com/yairEO/validator
 
 var validator = new FormValidator();
 // select your "form" element from the DOM and attach an "onsubmit" event handler to it:
@@ -14,5 +13,9 @@ document.forms[0].onsubmit = function(e){
     return !!validatorResult.valid;
 };
 
-validator.texts.complete = 'está faltando o sobrenome'
+validator.texts.complete = 'não está completo'
+
+// meu JavaScript
+
+
 

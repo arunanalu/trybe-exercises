@@ -19,21 +19,29 @@
           </label>
         </div>
         </div>
-        <div class="just-validate-tooltip-container">
-          <label for="inputEmail">Email:</label>
-          <input type="Email" name="email" id="inputEmail" required maxlength="50" placeholder="Digite seu email">
+        <div class="field">
+          <label>
+            <span>Email:</span>
+            <input type="Email" name="email" id="inputEmail" required maxlength="50" placeholder="Digite seu email">
+          </label>
         </div>
-        <div>
-          <label for="inputCpf">CPF:</label>
-          <input type="text" name="CPF" id="inputCpf" required maxlength="11" placeholder="Digite seu CPF">
+        <div class="field">
+          <label>
+            <span>CPF:</span>
+            <input data-validate-length="11" pattern="numeric" type="text" name="CPF" id="inputCpf" required maxlength="11" placeholder="Digite seu CPF">
+          </label>
         </div>
-        <div>
-          <label for="inputEndereco">Endereço:</label>
-          <input type="text" name="Endereço" id="inputEndereco" required maxlength="200" placeholder="Digite seu endereço">
+        <div class="field">
+          <label>
+            <span>Endereço:</span>
+            <input type="text" name="Endereço" id="inputEndereco" required maxlength="200" placeholder="Digite seu endereço">
+          </label>
         </div>
-        <div>
-          <label for="inputCidade">Cidade:</label>
-          <input type="text" name="Cidade" id="inputCidade" required maxlength="28" placeholder="Digite sua cidade">
+        <div class="field">
+          <label>
+            <span>Cidade:</span>
+            <input type="text" name="Cidade" id="inputCidade" required maxlength="28" placeholder="Digite sua cidade">
+          </label>
         </div>
         <div>
           <label for="selectEstado">Estado:</label>
@@ -76,21 +84,29 @@
         </div>
       </fieldset>
       <fieldset>
-        <div>
-          <p id="resumo">Resumo do currículo</p>
-          <textarea name="Currículo" id="textCurriculo" cols="60" rows="5" maxlength="1000" required></textarea>
+        <div class="field">
+          <label>
+            <span id="resumo">Resumo do currículo</span>
+            <textarea name="Currículo" id="textCurriculo" cols="60" rows="5" maxlength="1000" required></textarea>
+          </label>
         </div>
-        <div>
-          <label for="inputCargo">Seu cargo:</label>
-          <input type="text" name="Cargo" id="inputCargo" placeholder="Digite seu cargo" maxlength="40" required>
+        <div class="field">
+          <label>
+            <span>Seu cargo:</span>
+            <input type="text" name="Cargo" id="inputCargo" placeholder="Digite seu cargo" maxlength="40" required>
+          </label>
         </div>
-        <div>
-          <label for="inputDescricaoCargo">Descrição:</label>
-          <input type="text" name="Descrição do cargo" id="inputDescricaoCargo" placeholder="descreva seu cargo" required>
+        <div class="field">
+          <label>
+            <span>Descrição:</span>
+            <input type="text" name="Descrição do cargo" id="inputDescricaoCargo" placeholder="descreva seu cargo" required>
+          </label>
         </div>
-        <div>
-          <label for="inputData">Data de início:</label>
-          <input type="date" name="Data" id="inputData" required>
+        <div class="field">
+          <label>
+            <span>Data de início:</span>
+            <input type="date" name="Data" id="inputData" required>
+          </label>
         </div>
       </fieldset>
       <button type="submit" id="enviar">Enviar</button>
