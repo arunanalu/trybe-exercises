@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <form action="" method="GET">
+      <h2 id="formulario">Formulário</h1>
+      <fieldset>
+        <div>
+          <label for="inputNome">Nome:</label>
+          <input type="text" name="Nome" id="inputNome" required maxlength="40" placeholder="Digite seu nome" autofocus>
+        </div>
+        <div>
+          <label for="inputEmail">Email:</label>
+          <input type="Email" name="email" id="inputEmail" required maxlength="50" placeholder="Digite seu email">
+        </div>
+        <div>
+          <label for="inputCpf">CPF:</label>
+          <input type="text" name="CPF" id="inputCpf" required maxlength="11" placeholder="Digite seu CPF">
+        </div>
+        <div>
+          <label for="inputEndereco">Endereço:</label>
+          <input type="text" name="Endereço" id="inputEndereco" required maxlength="200" placeholder="Digite seu endereço">
+        </div>
+        <div>
+          <label for="inputCidade">Cidade:</label>
+          <input type="text" name="Cidade" id="inputCidade" required maxlength="28" placeholder="Digite sua cidade">
+        </div>
+        <div>
+          <label for="selectEstado">Estado:</label>
+          <select name="Estado" id="selectEstado" required>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+            <option value="EX">Estrangeiro</option>
+          </select>
+        </div>
+        <div>
+          <label for="inputResidencia">Casa</label>
+          <input checked type="radio" name="Tipo de residência" id="inputResidencia" value="casa" required>
+          <label for="inputResidencia2">Apartamento</label>
+          <input type="radio" name="Tipo de residência" id="inputResidencia2" value="apartamento" required>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div>
+          <p id="resumo">Resumo do currículo</p>
+          <textarea name="Currículo" id="textCurriculo" cols="60" rows="5" maxlength="1000" required></textarea>
+        </div>
+        <div>
+          <label for="inputCargo">Seu cargo:</label>
+          <input type="text" name="Cargo" id="inputCargo" placeholder="Digite seu cargo" maxlength="40" required>
+        </div>
+        <div>
+          <label for="inputDescricaoCargo">Descrição:</label>
+          <input type="text" name="Descrição do cargo" id="inputDescricaoCargo" placeholder="descreva seu cargo" required>
+        </div>
+        <div>
+          <label for="inputData">Data de início:</label>
+          <input type="date" name="Data" id="inputData" required>
+        </div>
+      </fieldset>
+      <button type="submit" id="enviar">Enviar</button>
+    </form>
+    <div>
+      <h3>Resultado</h3>
+      <div></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
