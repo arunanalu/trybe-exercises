@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/node_modules/bulma/css/bulma-rtl.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <main class="container">
+    <form action="" method="GET" novalidate id="formP" class="box">
+      <h2 class="title is-3">Formulário</h1>
+      <fieldset>
+        <div class="field">
+          <label class="label control">
+            <span>Nome: </span>
+            <input class="input" data-validate-words="2" type="text" name="Nome" id="inputNome" required maxlength="40" placeholder="Digite seu nome" autofocus>
+          </label>
+        </div>
+        </div>
+        <div class="field">
+          <label class="label control">
+            <span>Email:</span>
+            <input class="input" type="Email" name="email" id="inputEmail" required maxlength="50" placeholder="Digite seu email">
+          </label>
+        </div>
+        <div class="field">
+          <label class="label control">
+            <span>CPF:</span>
+            <input class="input" pattern="numeric" data-validate-minmax='11' type="text" name="CPF" id="inputCpf" required maxlength="11" placeholder="Digite seu CPF">
+          </label class="label control">
+        </div>
+        <div class="field">
+          <label class="label control">
+            <span>Endereço:</span>
+            <input class="input" type="text" name="Endereço" id="inputEndereco" required maxlength="200" placeholder="Digite seu endereço">
+          </label>
+        </div>
+        <div class="field">
+          <label class="label control">
+            <span>Cidade:</span>
+            <input class="input" type="text" name="Cidade" id="inputCidade" required maxlength="28" placeholder="Digite sua cidade">
+          </label>
+        </div>
+        <div class="control">
+          <label class="label" for="selectEstado">Estado:</label>
+          <div class="select">
+            <select name="Estado" id="selectEstado" required>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+              <option value="EX">Estrangeiro</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="radio" for="inputResidencia">Casa</label>
+          <input checked type="radio" name="Tipo de residência" id="inputResidencia" value="casa" required>
+          <label class="radio" for="inputResidencia2">Apartamento</label>
+          <input type="radio" name="Tipo de residência" id="inputResidencia2" value="apartamento" required>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="field">
+          <label>
+            <span id="resumo">Resumo do currículo</span>
+            <textarea class="textarea" name="Currículo" id="textCurriculo" cols="60" rows="5" maxlength="1000" required></textarea>
+          </label>
+        </div>
+        <div class="field">
+          <label class="label control">
+            <span>Seu cargo:</span>
+            <input class="input" type="text" name="Cargo" id="inputCargo" placeholder="Digite seu cargo" maxlength="40" required>
+          </label>
+        </div>
+        <div class="field">
+          <label class="label control">
+            <span>Descrição:</span>
+            <input class="input" type="text" name="Descrição do cargo" id="inputDescricaoCargo" placeholder="descreva seu cargo" required>
+          </label>
+        </div>
+        <div class="field" id="dataField">
+          <label class="label">
+            <span>Data de início:</span>
+            <input type="date" name="Data" id="inputData" required>
+          </label>
+        </div>
+      </fieldset>
+      <button class="button is-primary" type="submit" id="enviar">Enviar</button>
+    </form>
+    <div id="divRes">
+      <h3>Resultado</h3>
+      <div></div>
+    </div>
+  </main>
+  <script src="/node_modules/@yaireo/validator/validator.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
