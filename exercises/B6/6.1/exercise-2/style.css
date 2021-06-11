@@ -21,6 +21,21 @@ form {
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.404);
 }
 
+#resultadoDivPai {
+  background-color: rgba(137, 137, 238, 0.568);
+  width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.404);
+  display: none;
+}
+
+#resultadoDivPai h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 fieldset {
   margin-bottom: 20px;
   padding: 10px;
