@@ -30,5 +30,8 @@ document.forms[0].onsubmit = function(e){
 };
 
 validator.texts.complete = 'não está completo'
+validator.texts.empty = 'Preencha o campo'
+validator.texts.email = 'Insira um email válido'
+validator.texts.number = 'Não é um número'
 
 
