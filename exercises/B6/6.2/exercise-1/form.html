@@ -9,14 +9,17 @@
 </head>
 <body>
   <main>
-    <form action="" method="GET">
+    <form action="" method="GET" novalidate id="formP">
       <h2 id="formulario">Formulário</h1>
       <fieldset>
-        <div>
-          <label for="inputNome">Nome:</label>
-          <input type="text" name="Nome" id="inputNome" required maxlength="40" placeholder="Digite seu nome" autofocus>
+        <div class="field">
+          <label>
+            <span>Nome: </span>
+            <input data-validate-words="2" type="text" name="Nome" id="inputNome" required maxlength="40" placeholder="Digite seu nome" autofocus>
+          </label>
         </div>
-        <div>
+        </div>
+        <div class="just-validate-tooltip-container">
           <label for="inputEmail">Email:</label>
           <input type="Email" name="email" id="inputEmail" required maxlength="50" placeholder="Digite seu email">
         </div>
@@ -97,6 +100,7 @@
       <div></div>
     </div>
   </main>
+  <script src="/node_modules/@yaireo/validator/validator.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

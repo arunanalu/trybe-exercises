@@ -1,0 +1,9 @@
+.alert {
+    background-color: rgb(218, 75, 75);
+    color: white;
+    margin: 5px;
+    padding: 4px 10px 4px;
+    border-radius: 5px;
+    width: fit-content;
+    display: inline-block;
+}
