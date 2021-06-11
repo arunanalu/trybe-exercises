@@ -1,9 +1,51 @@
 .alert {
-    background-color: rgb(218, 75, 75);
-    color: white;
-    margin: 5px;
-    padding: 4px 10px 4px;
-    border-radius: 5px;
-    width: fit-content;
-    display: inline-block;
+  background-color: rgb(218, 75, 75);
+  color: white;
+  margin: 5px;
+  padding: 4px 10px 4px;
+  border-radius: 5px;
+  width: fit-content;
+  display: inline-block;
+}
+
+html {
+  background-color: transparent;
+}
+
+body {
+  background-color: rgb(222, 226, 236);
+}
+
+#divRes {
+  display: none;
+}
+
+.container {
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.title {
+  text-align: center;
+}
+
+.radio {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#dataField {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+#inputData {
+  border: 1px solid rgba(0, 0, 0, 0.527);
+  border-radius: 5px;
+}
+
+#enviar {
+  display: block;
+  margin: auto;
 }

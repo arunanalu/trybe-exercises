@@ -25,7 +25,7 @@ document.forms[0].onsubmit = function(e){
       // // document.body.style.backgroundColor = 'green';
       formularioCorreto();
     }
-    e.preventDefault();
+    // e.preventDefault();
     return !!validatorResult.valid;
 };
 
@@ -33,5 +33,6 @@ validator.texts.complete = 'não está completo'
 validator.texts.empty = 'Preencha o campo'
 validator.texts.email = 'Insira um email válido'
 validator.texts.number = 'Não é um número'
+validator.texts.invalid = 'Inválido'
 
 
