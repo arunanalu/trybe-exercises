@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 1.6em;
+    text-align: center;
+    margin: 15px 0;
+}
+
+h2 {
+    margin-top: 25px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.6em;
+    text-align: justify;
+    margin: 15px 15px;
+}
+
+img {
+    width: 100%;
+}
+
+figure {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+figcaption {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 2px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 500px) {
+    main {
+        width: 80%;
+        margin: auto;
+    }
+
+    figure {
+        max-width: 550px;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    figure {
+        width: auto;
+        margin: 20px 2%;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    p {
+        font-size: 1.3em;
+        max-width: 90%;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+}

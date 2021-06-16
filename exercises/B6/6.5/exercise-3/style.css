@@ -1,0 +1,155 @@
+html {
+    box-sizing: border-box;
+  }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  margin: 40px 10px;
+  margin-bottom: 60px;
+}
+
+footer p {
+  font-size: 1.5em;
+}
+
+#title {
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.subtitle {
+  font-size: 1.4em;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.aside {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.aside ul li {
+  padding: 2px;
+  font-size: 1.4em;
+}
+
+#articleTitle {
+  font-size: 1.6em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+#footerTitle {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.main-content p {
+  text-align: justify;
+  margin: 0 10px;
+  font-size: 1.8em;
+}
+
+#navegacao {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    height: 35px;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.986);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: white;
+} 
+
+#navegacao li {
+    list-style: none;
+    margin: 0px 10px;
+    font-weight: 600;
+} 
+
+@media screen and (min-width: 550px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  header aside {
+    margin: 20px 2.5%;
+  }
+
+  header aside:nth-of-type(1) {
+    order: 2;
+  }
+
+  aside ul li {
+    list-style: none;
+    text-align: justify;
+  }
+
+  #line {
+    border: 1px solid black;
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  #title {
+    font-size: 2em;
+  }
+
+  .subtitle {
+    font-size: 1.5em;
+  }
+
+  #articleTitle {
+    font-size: 2em;
+    margin-top: 50px;
+  }
+
+  #line {
+    display: none;
+  }
+
+  aside {
+    padding: 0 5%;
+  }
+
+  .aside ul li {
+    font-size: 1em;
+  }
+
+  .main-content p {
+    font-size: 1.2em;
+  }
+
+  .main-content {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  #footerTitle {
+    font-size: 1.2em;
+  }
+
+  footer p {
+    font-size: 1em;
+    max-width: 70%;
+    margin: auto;
+  }
+}
