@@ -1,5 +1,4 @@
 const {
-  findUserById,
   getUserName,
 } = require('./userData');
 
