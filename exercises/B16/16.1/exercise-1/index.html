@@ -47,9 +47,9 @@
         }
       }
 
-      function decrementIndex(index) {
+      function decrementIndex(index, colors) {
         if (index === 0) {
-          return 5
+          return colors.length - 1
         } else {
           return index - 1
         }
@@ -76,7 +76,7 @@
           case "PREVIOUS_COLOR":
             return {
               ...state,
-              index: decrementIndex(state.index),
+              index: decrementIndex(state.index, state.colors),
             }
             break
           case "RANDOM_COLOR":
