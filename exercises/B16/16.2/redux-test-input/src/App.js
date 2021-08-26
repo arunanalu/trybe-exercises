@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import './App.css';
+import TaskList from './components/TaskList';
 import addTask from './redux/actions';
 
 class App extends React.Component {
@@ -21,7 +22,7 @@ class App extends React.Component {
   render() {
 
     const { inputText } = this.state;
-    const { add, list } = this.props;
+    const { add } = this.props;
 
     return(
       <>
@@ -33,16 +34,7 @@ class App extends React.Component {
           </label>
           <button onClick={() => add(inputText)}>Adicionar</button>
         </div>
-        <div>
-          <h2>Lista de tarefas:</h2>
-          {
-            list.map((task, index) => {
-              return(
-                <p key={ index }>{ task }</p>
-              );
-            })
-          }
-        </div>
+        <TaskList />
       </>
     );
   }
@@ -52,8 +44,4 @@ const mapDispatchToProps = (dispatch) => ({
   add: (task) => dispatch(addTask(task))
 });
 
-const mapStateToProps = (state) => ({
-  list: state.listReducer
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(null, mapDispatchToProps)(App);
